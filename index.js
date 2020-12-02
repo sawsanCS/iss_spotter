@@ -1,5 +1,5 @@
-const {fetchMyIP, fetchCoordsByIP, fetchISSFlyOverTimes} = require('./iss');
-let myUrl = 'https://ipvigilante.com/json/72.141.69.246';
+const {nextISSTimesForMyLocation} = require('./iss');
+const myUrl = `https://api.ipgeolocationapi.com/geolocate/72.141.69.246`;
 const Coords = { latitude: '49.27670', longitude: '-123.13000' };
 
 fetchISSFlyOverTimes(Coords, (error, passTimes) => {
